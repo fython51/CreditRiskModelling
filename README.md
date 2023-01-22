@@ -4,8 +4,28 @@ Using a logistic regression model to predict loan status (default vs repayment).
 
 <br>
 
-## Source
+## Dataset
+### Source
 In the code, the data is imported as a .csv file, but it's originally from Kaggle. [Click here](https://www.kaggle.com/datasets/laotse/credit-risk-dataset?select=credit_risk_dataset.csv) to access it.
+
+### Data
+The data contains information on 32,581 borrowers, divided into 11 variables:
+
+| Variable | Type | Description |
+| -------: | :--: |:----------- |
+| **Age** | Numerical variable | Age in years |
+| **Income** | Numerical variable | Annual income in dollars |
+| **Home status** | Categorical variable | “Rent”, “mortgage” or “own” |
+| **Employment length** | Numerical variable | Employment length in years |
+| **Loan intent** | Categorical variable | “Education”, “medical”, “venture”, “home improvement”, “personal” or “debt consolidation” |
+| **Loan amount** | Numerical variable | Loan amount in dollars |
+| **Loan grade** | Categorical variable | “A”, “B”, “C”, “D”, “E”, “F” or “G” |
+| **Interest rate** | Numerical variable | Interest rate in percentage |
+| **Loan to income ratio** | Numerical variable | Between 0 and 1 |
+| **Historical default** | Binary, categorical variable | “Y” or “N” |
+| **Loan status** | Binary, numerical variable | 0 (no default) or 1 (default) → this is going to be our target variable |
+
+_**Note:** thank you [Sarah Beshr](https://towardsdatascience.com/a-machine-learning-approach-to-credit-risk-assessment-ba8eda1cd11f) for the descriptions._
 
 <br>
 
