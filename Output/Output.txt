@@ -1,0 +1,20 @@
+      There are 3047 null values, which represent 10.0% of observations.
+      These are dropped.
+      
+
+Fitting the data ...
+
+Best parameters: {'log_reg__C': 0.05179474679231213, 'log_reg__penalty': 'l1'} 
+
+
+Making predictions ...
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.89      0.96      0.92      4488
+           1       0.78      0.55      0.64      1239
+
+    accuracy                           0.87      5727
+   macro avg       0.83      0.75      0.78      5727
+weighted avg       0.86      0.87      0.86      5727
