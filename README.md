@@ -1,2 +1,36 @@
-# CreditRiskModelling
-Using a logistic regression model to predict loan status.
+# Credit Risk Modelling using Logistic Regression
+## Objective
+Using a logistic regression model to predict loan status (default vs repayment).
+
+<br>
+
+## Source
+In the code, the data is imported as a .csv file, but it's originally from Kaggle. [Click here](https://www.kaggle.com/datasets/laotse/credit-risk-dataset?select=credit_risk_dataset.csv) to access it.
+
+<br>
+
+## Functioning
+The script aims to train a logistic regression model to predict loan status using the given dataset, using the grid search to find the optimal hyperparameters. The code also includes some data visualization and cleaning steps to better understand the data and make the model more accurate.
+
+<br>
+
+## Sections
+The script is divided into several sections, each with a specific purpose:
+- The first section imports the necessary packages, including pandas, numpy, matplotlib, seaborn, and some modules from the scikit-learn library.
+- The second section loads the data from a CSV file and stores it in a pandas DataFrame.
+- The third section contains some data visualization code, specifically a loop that plots boxplots for each column in the DataFrame, and a heatmap that shows missing values in the data.
+- The fourth section contains data cleaning code, which is used to remove outliers and deal with null values in the data.
+- The fifth section defines a pipeline that includes a StandardScaler and a LogisticRegression object.
+- The sixth section defines the hyperparameter space for the LogisticRegression object and creates a GridSearchCV object that will be used to tune the hyperparameters.
+- The seventh section performs one-hot encoding on categorical variables, splits the data into training and testing sets, and fits the GridSearchCV object to the training data.
+- The eighth section shows the best hyperparameters found by the GridSearchCV object and makes predictions on the test set using these hyperparameters.
+
+<br>
+
+## Output
+Find the output code and the images in the "Output" folder.
+
+<br>
+
+## Other notes
+Thanks [ChatGPT](https://chat.openai.com/chat) for writing most of the comments in the script.
